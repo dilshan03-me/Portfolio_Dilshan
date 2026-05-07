@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilshan Sameera — Developer & Designer</title>
+  <meta name="description" content="Cyber Security Undergraduate | Full-Stack Developer | Graphic Designer. Crafting digital experiences." />
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Noto+Serif+Sinhala:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================
+       NAVIGATION
+  ===================== -->
+  <header class="nav-header" id="navbar">
+    <nav class="nav-container">
+
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo">
+        <img src="image/logo.jpg" alt="DS" class="logo-initials">DS</span>
+        <span class="logo-name">Dilshan Sameera</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="nav-controls">
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- User Login Button -->
+        <a href="#" class="btn-login">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+          Login
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- =====================
+       HERO SECTION
+  ===================== -->
+  <section class="hero" id="home">
+
+    <!-- Decorative background blobs -->
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+
+    <div class="hero-content">
+
+      <!-- Availability Badge -->
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for freelance work
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-title">
+        <span class="title-line">Cyber Security</span>
+        <span class="title-line italic">Student</span>
+        <span class="title-line">@ ICBT Campus</span>
+      </h1>
+
+      <!-- Sub-headline -->
+      <p class="hero-subtitle">
+        Cyber Security Undergraduate · Full-Stack Developer · Graphic Designer<br />
+        Building secure, beautiful products from Sri Lanka.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">1.5<span class="stat-plus">+</span></span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">10<span class="stat-plus">+</span></span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Core Disciplines</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image / Profile -->
+    <div class="hero-visual">
+      <div class="profile-frame">
+      <img src="image/my.jpg" alt="P J Dilshan Sameera" />
+
+        <!-- Floating skill tags -->
+        <div class="skill-tag tag-1">Graphic Design</div>
+        <div class="skill-tag tag-2">Cyber Security</div>
+        <div class="skill-tag tag-3">Web Development</div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =====================
+       ABOUT SECTION
+  ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">A bit about <em>who I am</em></h2>
+
+      <div class="about-grid">
+
+        <!-- About Text -->
+        <div class="about-text">
+          <p class="about-intro">
+            I'm <strong>P J Dilshan Sameera</strong>, a Cyber Security undergraduate passionate about building digital products that are both <em>secure</em> and <em>visually compelling</em>.
+          </p>
+          <p>
+            With hands-on experience as a Billing Officer at <strong>Ninewells Hospital</strong>, I've developed a strong eye for detail, accuracy, and professional delivery. I apply that same discipline to every line of code and every design I produce.
+          </p>
+          <p>
+            My core belief: great software should be invisible — it just works, beautifully.
+          </p>
+
+          <!-- Sinhala tagline using Noto Serif Sinhala font -->
+          <p class="sinhala-text">ශ්‍රී ලංකාවෙන් ගෝලීය ලෝකයට.</p>
+
+          <div class="about-links">
+            <a href="#contact" class="btn btn-primary">Work With Me</a>
+            <!-- INSERT RESUME: replace href with path to actual resume PDF -->
+            <a href="images/resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-panel">
+
+          <div class="skills-category">
+            <h4>Development</h4>
+            <div class="skill-list">
+              <div class="skill-item"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+              <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+              <div class="skill-item"><span>PHP / MySQL</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+              <div class="skill-item"><span>React (Learning)</span><div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div></div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Design & Media</h4>
+            <div class="skill-list">
+              <div class="skill-item"><span>Canva</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+              <div class="skill-item"><span>CapCut / Premiere Pro</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Cyber Security</h4>
+            <div class="skill-list">
+              <div class="skill-item"><span>Network Security</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div>
+              <div class="skill-item"><span>Linux / CLI</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================
+       PROJECTS SECTION
+  ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Projects I'm <em>proud of</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- ---- Project Card 1: festivalcards.online (FEATURED) ---- -->
+        <article class="project-card project-featured">
+
+          <div class="project-image">
+            <!-- INSERT PROJECT SCREENSHOT: replace with <img src="images/festivalcards-preview.jpg" alt="festivalcards.online preview" /> -->
+            <div class="project-img-placeholder">
+              <a href="https://festivalcards.online" target="_blank" rel="noopener noreferrer">
+                <img src="image/festivalcards-preview.png" alt="festivalcards.online preview"  class="project-img"/>
+              </a>
+            </div>
+            <div class="project-badge">Featured Project</div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-tag">Sri Lanka</span>
+              <span class="project-tag">Festivals</span>
+            </div>
+
+            <h3 class="project-title">festivalcards.online</h3>
+            <p class="project-desc">
+              A digital greeting card platform celebrating Sri Lankan festivals — Sinhala & Tamil New Year, Vesak, Christmas and more. Users can personalise, share, and download beautifully crafted cards in seconds.
+            </p>
+
+            <ul class="project-features">
+              <li>Custom card builder with live preview</li>
+              <li>Multi-festival support (Sinhala, Tamil, English)</li>
+              <li>Mobile-first, shareable card links</li>
+              <li>Clean admin dashboard</li>
+            </ul>
+
+            <!-- Project Links -->
+            <div class="project-links">
+              <a href="https://festivalcards.online" class="btn btn-primary" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Visit Site
+              </a>
+              <!-- Social share placeholders — add actual URLs later -->
+              <div class="project-social">
+                <a href="https://web.facebook.com/profile.php?id=61589086670248" class="social-icon" aria-label="Share on Facebook" title="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/festivalcards.online/" class="social-icon" aria-label="Share on Instagram" title="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://twitter.com/festivalcards" class="social-icon" aria-label="Share on X/Twitter" title="X / Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="View source on GitHub" title="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- ---- Project Card 2: Placeholder ---- -->
+        <article class="project-card">
+          <div class="project-image">
+            <!-- INSERT PROJECT SCREENSHOT: <img src="images/project2.jpg" alt="Project Name" /> -->
+            <div class="project-img-placeholder">
+              <span class="project-img-icon">🔐</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-tag">Cyber Security</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">Security Audit Tool</h3>
+            <p class="project-desc">
+              A command-line utility for basic network vulnerability scanning and reporting — built as part of academic coursework.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn btn-ghost btn-sm">Coming Soon</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ---- Project Card 3: Placeholder ---- -->
+        <article class="project-card">
+          <div class="project-image">
+            <!-- INSERT PROJECT SCREENSHOT: <img src="images/project3.jpg" alt="Design Portfolio" /> -->
+            <div class="project-img-placeholder">
+              <span class="project-img-icon">🎨</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-tag">Graphic Design</span>
+              <span class="project-tag">Canva</span>
+            </div>
+            <h3 class="project-title">Brand Design Portfolio</h3>
+            <p class="project-desc">
+              A collection of social media graphics, logos, and marketing materials created for local Sri Lankan businesses and events.
+            </p>
+            <div class="project-links">
+              <!-- Placeholder for future Behance/Dribbble link -->
+              <a href="#" class="social-icon" aria-label="Behance" title="Behance">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zm-7.726-3h3.957c-.069-1.742-1.219-2.405-2.01-2.405-.837 0-1.827.679-1.947 2.405zM9.763 11.975c.6-.573 1-1.388 1-2.325 0-2.264-1.703-3.65-4.01-3.65H2v12h5.066c2.506 0 4.53-1.149 4.53-3.911 0-1.173-.405-2.052-1.833-2.114zM4.257 8.18h2.37c.867 0 1.619.362 1.619 1.257 0 .862-.694 1.326-1.619 1.326H4.257V8.18zm2.826 7.524H4.257v-2.762h2.826c1.054 0 1.714.457 1.714 1.397 0 .899-.66 1.365-1.714 1.365z"/></svg>
+              </a>
+              <a href="#" class="btn btn-ghost btn-sm">View Soon</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       CONTACT SECTION
+  ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's build something <em>together</em></h2>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p class="contact-intro">
+            Have a project in mind? I'm open to freelance work, collaborations, and interesting opportunities. Drop me a message!
+          </p>
+
+          <ul class="contact-details">
+            <li>
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <!-- INSERT EMAIL: replace with actual email -->
+              <a href="mailto:online2021dilshan@gmail.com">online2021dilshan@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </span>
+              <!-- INSERT WHATSAPP NUMBER: replace with actual number -->
+              <a href="https://wa.me/94705330702" target="_blank" rel="noopener">+94 70 533 0702</a>
+            </li>
+            <li>
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span>Homagama, Colombo, Sri Lanka</span>
+            </li>
+          </ul>
+
+          <!-- Social Links -->
+          <div class="contact-socials">
+            <a href="#" class="social-pill" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="social-pill" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <!-- INSERT ACTUAL INSTAGRAM LINK -->
+            <a href="#" class="social-pill" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Project inquiry, collaboration..." />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================
+       FOOTER
+  ===================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <img src="image/logo.jpg" alt="Logo" class="logo-initials">
+          <div>
+            <div class="footer-name">P J Dilshan Sameera</div>
+            <div class="footer-tagline">Developer · Designer · Security Enthusiast</div>
+          </div>
+        </div>
+
+        <!-- Footer Nav Columns -->
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Navigate</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Projects</h5>
+            <ul>
+              <li><a href="https://festivalcards.online" target="_blank" rel="noopener">festivalcards.online</a></li>
+              <!-- Add more project links here -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul>
+              <!-- INSERT actual social links below -->
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Behance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Dilshan Sameera. All rights reserved.
+        </p>
+        <p class="footer-copy">
+          Designed and Developed by Dilshan Sameera
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =====================
+       FLOATING ELEMENTS
+  ===================== -->
+
+  <!-- WhatsApp Floating Button (bottom-left) -->
+  <!-- INSERT WHATSAPP NUMBER: replace 94XXXXXXXXX with your actual number -->
+  <a href="https://wa.me/94705330702" class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span class="fab-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Back to Top Button (bottom-right) -->
+  <button class="fab fab-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+    <span class="fab-tooltip">Back to top</span>
+  </button>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
