@@ -40,6 +40,19 @@
 
       <!-- Right Controls -->
       <div class="nav-controls">
+        <!-- Search Bar -->
+        <div class="nav-search-wrap" id="searchWrap">
+          <button class="nav-search-btn" id="searchToggle" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+          <div class="nav-search-panel" id="searchPanel">
+            <input type="text" class="nav-search-input" id="searchInput" placeholder="Search sections…" autocomplete="off" />
+            <div class="search-results-list" id="searchResults"></div>
+          </div>
+        </div>
+
         <!-- Dark / Light Mode Toggle -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <!-- Sun icon (shown in dark mode) -->
@@ -55,13 +68,13 @@
           </svg>
         </button>
 
-        <!-- User Login Button -->
-        <a href="#" class="btn-login">
+        <!-- User Login Button → triggers modal -->
+        <button class="btn-login" id="loginBtn" aria-label="Login">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
           </svg>
           Login
-        </a>
+        </button>
 
         <!-- Mobile Hamburger -->
         <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -420,6 +433,7 @@
           </button>
           <p class="form-note" id="formNote"></p>
         </form>
+        
 
       </div>
     </div>
@@ -439,8 +453,28 @@
           <div>
             <div class="footer-name">P J Dilshan Sameera</div>
             <div class="footer-tagline">Developer · Designer · Security Enthusiast</div>
+          <!-- Footer Map -->
+              <div class="footer-map-section">
+             <div class="footer-map-label">
+               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                 Homagama, Colombo, Sri Lanka
+               </div>
+               <div class="footer-map-frame">
+               <iframe
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80736789!2d80.0063!3d6.8428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253e5e0a07769%3A0x47e9e2d2acacb4ea!2sHomagama%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1699000000000!5m2!1sen!2sus"
+                 width="100%"
+                 height="220"
+                 style="border:0;"
+                 allowfullscreen=""
+                 loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"
+                 title="Homagama, Colombo, Sri Lanka">
+              </iframe>
+              </div>
+            </div>           
           </div>
         </div>
+
 
         <!-- Footer Nav Columns -->
         <div class="footer-cols">
@@ -472,6 +506,7 @@
           </div>
         </div>
       </div>
+   
 
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom">
@@ -486,6 +521,8 @@
           <a href="#">Terms of Use</a>
         </div>
       </div>
+
+
 
     </div>
   </footer>
@@ -511,6 +548,76 @@
     </svg>
     <span class="fab-tooltip">Back to top</span>
   </button>
+
+
+  <!-- =====================
+       LOGIN MODAL
+  ===================== -->
+  <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modalTitle">Welcome back</div>
+          <div class="modal-subtitle">Sign in to your account</div>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email / Username</label>
+          <input type="text" id="loginEmail" name="loginEmail" placeholder="you@example.com" autocomplete="username" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="••••••••" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" style="margin-top:8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          Login
+        </button>
+        <p class="form-note" id="loginNote" style="margin-top:10px;text-align:center;font-size:.75rem;"></p>
+      </form>
+      <p class="modal-footer-note">Don't have an account? <a href="#contact">Contact me</a></p>
+    </div>
+  </div>
+
+
+  <!-- =====================
+       AI CHAT WINDOW & FAB
+  ===================== -->
+  <button class="fab chat-fab" id="chatFab" aria-label="Open AI Chat">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span class="fab-tooltip">Ask me anything</span>
+  </button>
+
+  <div class="chat-window" id="chatWindow" role="dialog" aria-label="AI Chat">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">🤖</div>
+        <div>
+          <div class="chat-header-name">DS Assistant</div>
+          <div class="chat-header-status">Online</div>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <div class="chat-msg-avatar">🤖</div>
+        <div class="chat-bubble">Hi! I'm Dilshan's AI assistant. Ask me about his skills, projects, or how to get in touch! 👋</div>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask anything…" autocomplete="off" />
+      <button class="chat-send" id="chatSend" aria-label="Send message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
 
 
   <!-- JavaScript -->
